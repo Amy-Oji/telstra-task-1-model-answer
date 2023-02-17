@@ -4,13 +4,14 @@ import au.com.telstra.simcardactivator.foundation.ActuationResult;
 import au.com.telstra.simcardactivator.foundation.SimCard;
 import au.com.telstra.simcardactivator.foundation.SimCardEntity;
 import au.com.telstra.simcardactivator.repositories.SimCardRepository;
+import au.com.telstra.simcardactivator.services.SimCardService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
 @Component
-public class SimCardActuationHandler {
+public class SimCardActuationHandler implements SimCardService {
     private final RestTemplate restTemplate;
     private final String incentiveApiUrl;
 
@@ -23,11 +24,13 @@ public class SimCardActuationHandler {
     }
 
     public ActuationResult actuate(SimCard simCard) {
-        ActuationResult response=  restTemplate.postForObject(incentiveApiUrl, simCard, ActuationResult.class);
+        ActuationResult response =  restTemplate.postForObject(incentiveApiUrl, simCard, ActuationResult.class);
+        assert response != null;
 
         SimCardEntity simCardEntity = new SimCardEntity();
         BeanUtils.copyProperties(simCard, simCardEntity);
         simCardEntity.setActive(response.getSuccess());
+        simCardRepository.save(simCardEntity);
 
         return response;
     }

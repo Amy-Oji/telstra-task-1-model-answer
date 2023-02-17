@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9702358-0385-449c-b6f3-edf732118251" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="b9702358-0385-449c-b6f3-edf732118251" name="Changes" comment="solution for task 2- Persisted response from Actuator microservice&#10;&#10;created methods to save sim card details after consuming the actuator api. Also added methods to get sim card customer by simCardId">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/au/com/telstra/simcardactivator/component/SimCardActivationRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/au/com/telstra/simcardactivator/component/SimCardActivationRestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/au/com/telstra/simcardactivator/component/SimCardActuationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/au/com/telstra/simcardactivator/component/SimCardActuationHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/au/com/telstra/simcardactivator/component/SimCardActivationRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/au/com/telstra/simcardactivator/component/SimCardActivationRestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/au/com/telstra/simcardactivator/component/SimCardActuationHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/au/com/telstra/simcardactivator/component/SimCardActuationHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/au/com/telstra/simcardactivator/services/SimCardService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/au/com/telstra/simcardactivator/services/SimCardService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,9 +108,33 @@
       <workItem from="1663227127753" duration="20000" />
       <workItem from="1663227744660" duration="22000" />
     </task>
+    <task id="LOCAL-00001" summary="solution for task 2- Persisted response from Actuator microservice&#10;&#10;created methods to save sim card details after consuming the actuator api. Also added methods to get sim card customer by simCardId">
+      <created>1676631293321</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1676631293321</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="solution for task 2- Persisted response from Actuator microservice&#10;&#10;created methods to save sim card details after consuming the actuator api." />
+    <MESSAGE value="solution for task 2- Persisted response from Actuator microservice&#10;&#10;created methods to save sim card details after consuming the actuator api. Also added methods to get sim card customer by simCardId" />
+    <option name="LAST_COMMIT_MESSAGE" value="solution for task 2- Persisted response from Actuator microservice&#10;&#10;created methods to save sim card details after consuming the actuator api. Also added methods to get sim card customer by simCardId" />
   </component>
 </project>
