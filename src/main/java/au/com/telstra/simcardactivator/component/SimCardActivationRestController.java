@@ -1,9 +1,7 @@
 package au.com.telstra.simcardactivator.component;
 
 import au.com.telstra.simcardactivator.foundation.SimCard;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class SimCardActivationRestController {
@@ -18,6 +16,11 @@ public class SimCardActivationRestController {
     public void handleActivationRequest(@RequestBody SimCard simCard) {
         var actuationResult = simCardActuationHandler.actuate(simCard);
         System.out.println(actuationResult.getSuccess());
+    }
+
+    @GetMapping(value = "/get-customer/{id}")
+    public SimCard getCustomer(@PathVariable("id") long simCardId) {
+        return simCardActuationHandler.getCustomerById(simCardId);
     }
 
 }

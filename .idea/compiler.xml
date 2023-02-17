@@ -7,11 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="telstra-task-1-model-answer" />
+        <module name="SimCardActivator" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="SimCardActivator" options="-parameters" />
       <module name="telstra-task-1-model-answer" options="-parameters" />
     </option>
   </component>
